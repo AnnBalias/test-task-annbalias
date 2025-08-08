@@ -1,0 +1,44 @@
+.tabGroup {
+    display: flex;
+    gap: 1.5px;
+    max-width: 297px;
+    height: 32px;
+    padding: 1.5px;
+    background: linear-gradient(to right, #a445b2, #00d4ff);
+    justify-content: center;
+   border-radius: 10px;
+}
+
+.tabButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0;
+    width: 98px;
+    background-color: #121212;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.tabButton:first-child  {
+    border-radius: 9px 0 0 9px;
+}
+
+.tabButton:last-child  {
+    border-radius:0 9px 9px 0;
+}
+
+.tabButton:first-child:hover,
+.tabButton:first-child.active {
+    color: #FF6EFD;
+}
+
+.tabButton:hover,
+.tabButton.active {
+    color: #5DDFFF;
+}
+
+.tabButton:last-child:hover,
+.tabButton:last-child.active {
+    color: #6ED6FF;
+}
