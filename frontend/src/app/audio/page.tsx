@@ -1,28 +1,27 @@
 'use client';
 
 import React, { useState } from 'react';
-// import Lottie from "lottie-react";
-// import microphoneAnimation from "./groovyWalk.json";
-import css from "./page.module.css";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import css from './page.module.css';
 
 export default function Page() {
-  // const [isRecording, setIsRecording] = useState(false);
+  const [isRecording, setIsRecording] = useState(false);
 
-  // const toggleRecording = () => {
-  //   setIsRecording(prev => !prev);
-  // };
+  const toggleRecording = () => {
+    setIsRecording((prev) => !prev);
+  };
 
   return (
     <div className={css.wrapper}>
       <h1 className="text-xl font-bold mb-4">Audio page</h1>
 
-      {/* <div style={{ width: 200, marginBottom: 20 }}>
-        <Lottie
-          animationData={microphoneAnimation}
-          loop={true}
-          autoplay={isRecording}
+      <div style={{ width: 200, marginBottom: 20 }}>
+        <DotLottieReact
+          src="https://lottie.host/faa30c6f-9468-4a0d-8373-808167f6628a/I7hDsDEGmX.lottie"
+          loop
+          autoplay
         />
-      </div> 
+      </div>
 
       <button
         onClick={toggleRecording}
@@ -37,7 +36,7 @@ export default function Page() {
         }}
       >
         {isRecording ? 'Завершити розмову' : 'Почати розмову'}
-      </button> */}
+      </button>
     </div>
   );
 }
